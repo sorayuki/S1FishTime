@@ -34,6 +34,8 @@
   <ItemGroup>
     <Compile Include="demo.cs" />
     <Compile Include="FishTimeDataSource.cs" />
+    <Compile Include="FishTimeDataStorage.cs" />
+    <Compile Include="FishTimeGlobalConfig.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

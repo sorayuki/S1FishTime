@@ -12,7 +12,8 @@ namespace FishTime
             for (; ; )
             {
                 FishData fishData = fishDataSource.RetrieveFishData();
-                Console.WriteLine(fishData);
+                if (fishData != null)
+                    FishTimeDataStorage.Instance.AppendRecord(fishData);
                 Thread.Sleep(1000);
             }
         }
